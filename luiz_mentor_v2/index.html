@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Luiz Mentor V2</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- App Shell -->
+    <div id="app-shell">
+        <!-- Sidebar Overlay (Backdrop) -->
+        <div id="sidebar-overlay" class="hidden"></div>
+
+        <!-- Sidebar Menu -->
+        <aside id="sidebar">
+            <div class="sidebar-header">
+                <h2>MENU TÁTICO</h2>
+                <button id="btn-close-sidebar" class="btn-icon">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <button data-route="dashboard" class="nav-item active">
+                    <i data-lucide="layout-dashboard"></i>
+                    QG Central
+                </button>
+                <button data-route="blackbox" class="nav-item">
+                    <i data-lucide="mic"></i>
+                    Caixa Preta (Áudios)
+                </button>
+                <button data-route="scoreboard" class="nav-item">
+                    <i data-lucide="trophy"></i>
+                    Placar da Guerra
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <p>Versão 2.0.0 (Protocolo Arquiteto)</p>
+            </div>
+        </aside>
+
+        <!-- Fixed Header -->
+        <header id="app-header">
+            <button id="btn-menu" class="btn-icon">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="header-status">
+                <span class="status-label">PROTOCOLO</span>
+                <span id="protocol-status" class="status-value">EM PROGRESSO</span>
+            </div>
+            <div class="header-avatar">
+                <img src="https://ui-avatars.com/api/?name=LM&background=3B82F6&color=fff" alt="Avatar">
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <!-- Dynamic View Injected Here -->
+        </main>
+    </div>
+
+    <!-- Modals Container -->
+    <div id="modal-container"></div>
+
+    <!-- Logic -->
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
